@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React to Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>React to a Post</h1>
+        <form id="reaction-form">
+            <label for="cookie">Cookie:</label>
+            <input type="text" id="cookie" name="cookie" required>
+
+            <label for="link">Post Link:</label>
+            <input type="text" id="link" name="link" required>
+
+            <label for="reaction">Reaction:</label>
+            <select id="reaction" name="reaction" required>
+                <option value="LIKE">Like</option>
+                <option value="LOVE">Love</option>
+                <option value="HAHA">Haha</option>
+                <option value="WOW">Wow</option>
+                <option value="SAD">Sad</option>
+                <option value="ANGRY">Angry</option>
+            </select>
+
+            <button type="submit">Send Reaction</button>
+        </form>
+
+        <div id="response" class="response"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
